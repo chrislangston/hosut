@@ -1,8 +1,9 @@
 {
   "courseName": "Pharmacy Spanish",
   "courseId": 1,
+  "url": null,
   "description": "Pharmacy Spanish",
-  "coursePreviewUrl": "https://s3.amazonaws.com/handsonspanish/assets/imgpharmacy/pharmacy-course.jpg",
+  "coursePreviewUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/pharmacy-course.jpg",
   "lessons": [
     {
       "lessonId": 1,
@@ -17,27 +18,30 @@
       "numberOfQuizQuestions": 0,
       "clips": [
         {
-          "clipId": "1a",
           "durationInSeconds": 703,
-            "durationDisplay": "11 minutes 43 seconds",
+          "durationDisplay": "11 minutes 43 seconds",
           "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/intro/01-Pharmacy-Introduction-Overview-And-Objectives-720.mp4",
           "displayOrder": 1,
-          "title": "Overview and Objectives"
+          "title": "Overview and Objectives",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
         },
         {
-          "clipId": "1b",
           "durationInSeconds": 442,
           "durationDisplay": "7 minutes 32 seconds",
           "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/intro/01-Pharmacy-Introduction-Cultural-Notes-720.mp4",
           "displayOrder": 2,
-          "title": "Cultural Notes"
+          "title": "Cultural Notes",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
         }
-      ]
+      ],
+      "status": "NotStarted"
     },
     {
       "lessonId": 2,
       "lessonDescription": "Pronunciation",
-      "displayOrder": 2,
+      "displayOrder": 1,
       "lessonUrl": "",
       "durationInSeconds": 3328,
       "durationToDisplay": "54 minutes 27 seconds",
@@ -46,15 +50,588 @@
       "hasQuizzes": true,
       "numberOfQuizQuestions": 13,
       "clips": [
-        {"clipId":"2a","durationInSeconds":550,"durationDisplay":"9 minutes 10 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-a-Spanish-Alphabet-Dialectal-Differences-720.mp4","displayOrder":1,"title":"Spanish Alphabet & Dialectal Differences"},
-        {"clipId":"2b","durationInSeconds":542,"durationDisplay":"9 minutes 2 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-b-Vowels-720.mp4","displayOrder":2,"title":"Vowels"},
-        {"clipId":"2c","durationInSeconds":480,"durationDisplay":"8 minutes","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-c-Consonants-B-through-M-720.mp4","displayOrder":3,"title":"Consonants B through M"},
-        {"clipId":"2d","durationInSeconds":503,"durationDisplay":"8 minutes 23 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunciation-d-Consonants-n-through-r-720.mp4","displayOrder":4,"title":"Consonants N through R"},
-        {"clipId":"2e","durationInSeconds":215,"durationDisplay":"3 minutes 34 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunciation-e-Consonants-s-through-z-720.mp4","displayOrder":5,"title":"Consonants S through Z"},
-        {"clipId":"2f","durationInSeconds":655,"durationDisplay":"10 minutes 55 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Ponunciation-f-Stress-Rules-and-Punctuation-720.mp4","displayOrder":6,"title":"Stress Rules and Punctuation"},
-        {"clipId":"2g","durationInSeconds":383,"durationDisplay":"6 minutes 23 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-g-Practice-720.mp4","displayOrder":7,"title":"Practice"}
-      ]
+        {
+          "durationInSeconds": 550,
+          "durationDisplay": "9 minutes 10 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-a-Spanish-Alphabet-Dialectal-Differences-720.mp4",
+          "displayOrder": 1,
+          "title": "Spanish Alphabet & Dialectal Differences",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 542,
+          "durationDisplay": "9 minutes 2 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-b-Vowels-720.mp4",
+          "displayOrder": 2,
+          "title": "Vowels",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 480,
+          "durationDisplay": "8 minutes",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-c-Consonants-B-through-M-720.mp4",
+          "displayOrder": 3,
+          "title": "Consonants B through M",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 503,
+          "durationDisplay": "8 minutes 23 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunciation-d-Consonants-n-through-r-720.mp4",
+          "displayOrder": 4,
+          "title": "Consonants N through R",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 215,
+          "durationDisplay": "3 minutes 34 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunciation-e-Consonants-s-through-z-720.mp4",
+          "displayOrder": 5,
+          "title": "Consonants S through Z",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 655,
+          "durationDisplay": "10 minutes 55 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunciation-f-Stress-Rules-and-Punctuation-720.mp4",
+          "displayOrder": 6,
+          "title": "Stress Rules and Punctuation",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 383,
+          "durationDisplay": "6 minutes 23 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-g-Practice-720.mp4",
+          "displayOrder": 7,
+          "title": "Practice",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        }
+      ],
+      "status": "NotStarted"
+    },
+    {
+      "lessonId": 3,
+      "lessonDescription": "Grammar Part One",
+      "displayOrder": 3,
+      "lessonUrl": "",
+      "durationInSeconds": 2889,
+      "durationToDisplay": "48 minutes 9 seconds",
+      "thumbnailImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_thumbnail.jpg",
+      "largeImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_400x267.jpg",
+      "hasQuizzes": true,
+      "numberOfQuizQuestions": 15,
+      "clips": [
+        {
+          "durationInSeconds": 549,
+          "durationDisplay": "9 minutes 9 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-1/03-Pharmacy-Grammar-Part-1-a-Overview-of-Nouns-and-Articles-720.mp4",
+          "displayOrder": 1,
+          "title": "Overview of Nouns and Articles",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 328,
+          "durationDisplay": "5 minutes 28 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-1/03-Pharmacy-Grammar-Part-1-b-Masculine-and-Feminine-Nouns-720.mp4",
+          "displayOrder": 2,
+          "title": "Masculine and Feminine Nouns",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 388,
+          "durationDisplay": "6 minutes 28 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-1/03-Pharmacy-Grammar-Part-1-c-Nouns-that-Refer-to-People-and-Making-Nouns-Plural-720.mp4",
+          "displayOrder": 3,
+          "title": "Nouns that Refer to People and Making Nouns Plural",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 365,
+          "durationDisplay": "6 minutes 5 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-1/03-Pharmacy-Grammar-Part-1-d-Adjectives-Overview-And-Artlcles-redo-720.mp4",
+          "displayOrder": 4,
+          "title": "Adjectives: Overview & Articles",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 408,
+          "durationDisplay": "6 minutes 48 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-1/03-Pharmacy-Grammar-Part-1-e-Descriptive-Adjectives-720.mp4",
+          "displayOrder": 5,
+          "title": "Descriptive Adjectives",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 119,
+          "durationDisplay": "1 minute 59 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-1/03-Pharmacy-Grammar-Part-1-f-Quantitative-Adjectives-720.mp4",
+          "displayOrder": 6,
+          "title": "Quantitative Adjectives",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 454,
+          "durationDisplay": "7 minutes 34 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-1/03-Pharmacy-Grammar-Part-1-g-Possessive-Adjectives-720.mp4",
+          "displayOrder": 7,
+          "title": "Possessive Adjectives",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 278,
+          "durationDisplay": "4 minutes 38 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-1/03-Pharmacy-Grammar-Part-1-h-Pronouns-720.mp4",
+          "displayOrder": 8,
+          "title": "Pronouns",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        }
+      ],
+      "status": "NotStarted"
+    },
+    {
+      "lessonId": 4,
+      "lessonDescription": "Grammar Part Two",
+      "displayOrder": 4,
+      "lessonUrl": "",
+      "durationInSeconds": 3072,
+      "durationToDisplay": "51 minutes 12 seconds",
+      "thumbnailImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_thumbnail.jpg",
+      "largeImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_400x267.jpg",
+      "hasQuizzes": true,
+      "numberOfQuizQuestions": 15,
+      "clips": [
+        {
+          "durationInSeconds": 436,
+          "durationDisplay": "7 minutes 16 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-2/04-Pharmacy-Part-2-a-Verbs-Overview-and-Forms-720.mp4",
+          "displayOrder": 1,
+          "title": "Verbs: Overview and Forms",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 882,
+          "durationDisplay": "14 minutes 42 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-2/04-Pharmacy-Part-2-b-List-of-Useful-Verbs-720.mp4",
+          "displayOrder": 2,
+          "title": "List of Useful Verbs",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 367,
+          "durationDisplay": "6 minutes 7 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-2/04-Pharmacy-Part-2-c-Ser-versus-Estar-720.mp4",
+          "displayOrder": 3,
+          "title": "Ser versus Estar",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 250,
+          "durationDisplay": "4 minutes 10 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-2/04-Pharmacy-Part-2-d-Other-Verbs-with-Similar-Meanings-720.mp4",
+          "displayOrder": 4,
+          "title": "Other Verbs with Similar Meanings",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 441,
+          "durationDisplay": "7 minutes 21 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-2/04-Pharmacy-Part-2-e-Using-Two-Verbs-Together-720.mp4",
+          "displayOrder": 5,
+          "title": "Using Two Verbs Together",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 351,
+          "durationDisplay": "5 minutes 51 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-2/04-Pharmacy-Part-2-f-The-Future-and-Sentence-Order-720.mp4",
+          "displayOrder": 6,
+          "title": "The Future and Sentence Order",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 345,
+          "durationDisplay": "5 minutes 45 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/grammar-part-2/04-Pharmacy-Part-2-g-Communicating-Smoothly-in-Spanish-720.mp4",
+          "displayOrder": 7,
+          "title": "Communicating Smoothly in Spanish",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        }
+      ],
+      "status": "NotStarted"
+    },
+    {
+      "lessonId": 5,
+      "lessonDescription": "Basics",
+      "displayOrder": 5,
+      "lessonUrl": "",
+      "durationInSeconds": 3662,
+      "durationToDisplay": "61 minutes 2 seconds",
+      "thumbnailImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_thumbnail.jpg",
+      "largeImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_400x267.jpg",
+      "hasQuizzes": true,
+      "numberOfQuizQuestions": 11,
+      "clips": [
+        {
+          "durationInSeconds": 456,
+          "durationDisplay": "7 minutes 36 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/basics/05-Pharmacy-Basics-a-Greetings-and-Courteous-Expressions-720.mp4",
+          "displayOrder": 1,
+          "title": "Greetings and Courteous Expressions",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 343,
+          "durationDisplay": "5 minutes 43 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/basics/05-Pharmacy-Basics-b-More-Basics-720.mp4",
+          "displayOrder": 2,
+          "title": "More Basics",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 573,
+          "durationDisplay": "9 minutes 33 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/basics/05-Pharmacy-Basics-c-Filing-Errors-Caused-by-Dual-Hispanic-Surnames-720.mp4",
+          "displayOrder": 3,
+          "title": "Filing Errors Caused by Dual Hispanic Surnames",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 493,
+          "durationDisplay": "8 minutes 13 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/basics/05-Pharmacy-Basics-d-Numbers-720.mp4",
+          "displayOrder": 4,
+          "title": "Numbers",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 393,
+          "durationDisplay": "6 minutes 33 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/basics/05-Pharmacy-Basics-e-Colors-Days-and-Dates-720.mp4",
+          "displayOrder": 5,
+          "title": "Colors, Days, and Dates",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 189,
+          "durationDisplay": "3 minutes 9 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/basics/05-Pharmacy-Basics-f-Question-Words-720.mp4",
+          "displayOrder": 6,
+          "title": "Question Words",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 788,
+          "durationDisplay": "13 minutes 8 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/basics/05-Pharmacy-Basics-g-Telling-Time-720.mp4",
+          "displayOrder": 7,
+          "title": "Telling Time",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 427,
+          "durationDisplay": "7 minutes 7 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/basics/05-Pharmacy-Basics-h-At-What-Time-and-Sample-Dialogue-720.mp4",
+          "displayOrder": 8,
+          "title": "At What Time and Sample Dialogue",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        }
+      ],
+      "status": "NotStarted"
+    },
+    {
+      "lessonId": 6,
+      "lessonDescription": "Vocabulary Part 1",
+      "displayOrder": 6,
+      "lessonUrl": "",
+      "durationInSeconds": 5091,
+      "durationToDisplay": "84 minutes 51 seconds",
+      "thumbnailImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_thumbnail.jpg",
+      "largeImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_400x267.jpg",
+      "hasQuizzes": true,
+      "numberOfQuizQuestions": 12,
+      "clips": [
+        {
+          "durationInSeconds": 383,
+          "durationDisplay": "6 minutes 23 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-a-Body-Parts-720.mp4",
+          "displayOrder": 1,
+          "title": "Body Parts",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 248,
+          "durationDisplay": "4 minutes 38 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-b-More-Body-Parts-720.mp4",
+          "displayOrder": 2,
+          "title": "More Body Parts",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 272,
+          "durationDisplay": "4 minutes 32 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-c-Pharmacy-Basics-720.mp4",
+          "displayOrder": 3,
+          "title": "Pharmacy Basics",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 279,
+          "durationDisplay": "4 minutes 39 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-d-Medical-Insurance-720.mp4",
+          "displayOrder": 4,
+          "title": "Medical Insurance",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 445,
+          "durationDisplay": "7 minutes 25 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-e-Obtaining-Patient-Information-720.mp4",
+          "displayOrder": 5,
+          "title": "Obtaining Patient Information",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 596,
+          "durationDisplay": "9 minutes 56 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-f-Problems-with-Filling-the-Prescription-720.mp4",
+          "displayOrder": 6,
+          "title": "Problems with Filling the Prescription",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 484,
+          "durationDisplay": "8 minutes 4 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-g-Prescription-Pickup-and-Practice-720.mp4",
+          "displayOrder": 7,
+          "title": "Prescription Pickup and Practice",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 424,
+          "durationDisplay": "7 minutes 4 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-h-Symptoms-and-Conditions-Part-One-720.mp4",
+          "displayOrder": 8,
+          "title": "Symptoms and Conditions Part One",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 503,
+          "durationDisplay": "8 minutes 23 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-i-Symptoms-and-Conditions-Part-Two-720.mp4",
+          "displayOrder": 9,
+          "title": "Symptoms and Conditions Part Two",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 474,
+          "durationDisplay": "7 minutes 54 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-j-Symptoms-and-Conditions-Part-Three-720.mp4",
+          "displayOrder": 10,
+          "title": "Symptoms and Conditions Part Three",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 192,
+          "durationDisplay": "3 minutes 12 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-k-Follow-up-Questions-and-Side-Effects-720.mp4",
+          "displayOrder": 11,
+          "title": "Follow-up Questions and Side Effects",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 428,
+          "durationDisplay": "7 minutes 8 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-l-Sample-Dialogue-One-720.mp4",
+          "displayOrder": 12,
+          "title": "Sample Dialogue One",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 363,
+          "durationDisplay": "6 minutes 3 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-1/06-Pharmacy-Vocabular-Part-1-m-Sample-Dialogue-Two-and-More-Practice-720.mp4",
+          "displayOrder": 13,
+          "title": "Sample Dialogue Two and More Practice",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        }
+      ],
+      "status": "NotStarted"
+    },
+    {
+      "lessonId": 7,
+      "lessonDescription": "Vocabulary Part 2",
+      "displayOrder": 7,
+      "lessonUrl": "",
+      "durationInSeconds": 4261,
+      "durationToDisplay": "71 minutes",
+      "thumbnailImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_thumbnail.jpg",
+      "largeImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_400x267.jpg",
+      "hasQuizzes": true,
+      "numberOfQuizQuestions": 17,
+      "clips": [
+        {
+          "durationInSeconds": 210,
+          "durationDisplay": "3 minutes 30 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-a-Medicine-Drug-Routes-and-Preps-720.mp4",
+          "displayOrder": 1,
+          "title": "Medicine: Drug Routes and Preps",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 230,
+          "durationDisplay": "4 minutes 38 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-b-OTC-and-Other-Products-720.mp4",
+          "displayOrder": 2,
+          "title": "OTC and Other Products",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 316,
+          "durationDisplay": "5 minutes 16 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-c-Prescription-Drugs-and-Drug-Categories-720.mp4",
+          "displayOrder": 3,
+          "title": "Prescription Drugs and Drug Categories",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 181,
+          "durationDisplay": "3 minutes 1 second",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-d-Drug-Allergies-and-Medications-Being-Taken-Currently-720.mp4",
+          "displayOrder": 4,
+          "title": "Drug Allergies and Medications Being Taken Currently",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 333,
+          "durationDisplay": "5 minutes 33 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-e-Directions-Quantity-and-Frequency-720.mp4",
+          "displayOrder": 5,
+          "title": "Directions: Quantity and Frequency",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 338,
+          "durationDisplay": "5 minutes 38 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-f-Directions-How-and-Why-Medicine-is-to-Be-Taken-720.mp4",
+          "displayOrder": 6,
+          "title": "Directions: How and Why Medicine is to Be Taken",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 244,
+          "durationDisplay": "4 minutes 4 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-g-Directions-for-Use-Practice-720.mp4",
+          "displayOrder": 7,
+          "title": "Directions for Use: Practice",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 188,
+          "durationDisplay": "3 minutes 8 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-h-Skipping-Doses-and-Storage-720.mp4",
+          "displayOrder": 8,
+          "title": "Skipping Doses and Storage",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 457,
+          "durationDisplay": "7 minutes 37 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-i-Other-Directions-720.mp4",
+          "displayOrder": 9,
+          "title": "Other Directions",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 530,
+          "durationDisplay": "8 minutes 50 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-j-Other-Warnings-720.mp4",
+          "displayOrder": 10,
+          "title": "Other Warnings",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 211,
+          "durationDisplay": "3 minutes 31 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-k-Sample-Directions-for-Use-720.mp4",
+          "displayOrder": 11,
+          "title": "Sample Directions for Use",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 429,
+          "durationDisplay": "7 minutes 9 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-l-Clarification-and-Consultation-720.mp4",
+          "displayOrder": 12,
+          "title": "Clarification and Consultation",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        },
+        {
+          "durationInSeconds": 594,
+          "durationDisplay": "9 minutes 54 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/vocabulary-part-2/07-Pharmacy-Vocabulary-Part-2-m-Sample-Dialogue-SIG-Writing-Practice-and-Conclusion-720.mp4",
+          "displayOrder": 13,
+          "title": "Sample Dialogue, SIG Writing Practice and Conclusion",
+          "hasBeenPlayed": false,
+          "status": "NotStarted"
+        }
+      ],
+      "status": "NotStarted"
     }
   ],
-  "numberOfLessons": 2
+  "numberOfLessons": 7
 }
