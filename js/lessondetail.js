@@ -50,9 +50,13 @@
   container.innerHTML = headerHtml + `
     <div class="row">
       <div class="col-12 col-lg-8 mb-3">
-        <video id="lesson-player" class="video-js vjs-fluid rounded border" controls preload="none" data-setup='{}'>
-          <source src="" type="video/mp4" />
-        </video>
+        <div class="position-relative">
+          <video id="lesson-player" class="video-js vjs-fluid rounded border" controls preload="none" playsinline></video>
+          <div id="player-placeholder" class="position-absolute top-50 start-50 translate-middle text-center text-muted small">
+            <i class="bi bi-play-circle display-6 d-block mb-2"></i>
+            <span>Select a clip on the right to begin playback.</span>
+          </div>
+        </div>
       </div>
       <div class="col-12 col-lg-4">
         <h5 class="h6">Clips</h5>
@@ -72,10 +76,8 @@
   rightCol.appendChild(statusDiv);
 
   const playerEl = document.getElementById('lesson-player');
-  let player = null;
-  if(window.videojs){
-    player = window.videojs(playerEl);
-  }
+  const placeholder = document.getElementById('player-placeholder');
+  let player = null; // will lazy-init on first clip selection
 
   let currentIndex = null;
 
@@ -100,6 +102,30 @@
     if(overall === 'Complete') statusDiv.classList.add('text-success');
   }
 
+  function initPlayerIfNeeded(){
+    if(!player && window.videojs){
+      player = window.videojs(playerEl, { autoplay: false });
+      attachPlayerEvents();
+    }
+  }
+
+  function attachPlayerEvents(){
+    if(!player) return;
+    player.off('ended');
+    player.off('error');
+    player.on('ended', handleEnded);
+    player.on('error', function(){
+      const err = player.error();
+      if(err){
+        console.error('Video.js error', err.code, err.message, err);
+        const msg = document.createElement('div');
+        msg.className = 'alert alert-danger mt-2';
+        msg.textContent = 'Video playback error (code '+err.code+'). Please check the clip URL or try again.';
+        if(!container.querySelector('.alert-danger')) container.appendChild(msg);
+      }
+    });
+  }
+
   function playClipAt(index){
     currentIndex = index;
     const clip = clipsSorted[index];
@@ -111,21 +137,32 @@
       alert('This clip has an invalid or missing MP4 URL.');
       return;
     }
+    initPlayerIfNeeded();
+    if(placeholder) placeholder.remove();
     if(player){
       try {
         player.pause();
         player.src({ src: srcUrl, type: 'video/mp4' });
-        player.play(); // user initiated click so play should be allowed
+        // Safari sometimes needs a slight delay before play after src set
+        setTimeout(()=>{ player.play().catch(e=>console.warn('Autoplay failed (expected until user gesture)', e)); }, 10);
       } catch(e){
         console.error('Video.js set src error', e);
       }
     } else {
-      const sourceEl = playerEl.querySelector('source');
-      sourceEl.src = srcUrl;
+      // Native fallback
+      playerEl.src = srcUrl;
       playerEl.load();
       playerEl.play().catch(err=>{
         console.error('Native video play failed', err);
       });
+      // attach events only once for native
+      if(!playerEl._eventsBound){
+        playerEl.addEventListener('ended', handleEnded);
+        playerEl.addEventListener('error', function(){
+          console.error('Native video error', playerEl.error);
+        });
+        playerEl._eventsBound = true;
+      }
     }
     ProgressTracker.markClipStarted(String(lesson.lessonId), clipId);
     // If this is the last clip and user started it, mark lesson complete per spec variant
@@ -147,28 +184,7 @@
     }
   }
 
-  if(player){
-    player.on('ended', handleEnded);
-    player.on('error', function(){
-      const err = player.error();
-      if(err){
-        console.error('Video.js error', err.code, err.message, err);
-        const msg = document.createElement('div');
-        msg.className = 'alert alert-danger mt-2';
-        msg.textContent = 'Video playback error (code '+err.code+'). Please check the clip URL or try again.';
-        if(!container.querySelector('.alert-danger')) container.appendChild(msg);
-      }
-    });
-  } else {
-    playerEl.addEventListener('ended', handleEnded);
-    playerEl.addEventListener('error', function(){
-      console.error('Native video error','code' in playerEl.error ? playerEl.error.code : playerEl.error);
-      const msg = document.createElement('div');
-      msg.className = 'alert alert-danger mt-2';
-      msg.textContent = 'Video playback error. Please check the clip URL or try again.';
-      if(!container.querySelector('.alert-danger')) container.appendChild(msg);
-    });
-  }
+  // No immediate player init / event binding here to prevent initial CODE:4 error.
 
   updateClipStatusUI();
 
