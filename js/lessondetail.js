@@ -104,7 +104,21 @@
 
   function initPlayerIfNeeded(){
     if(!player && window.videojs){
-      player = window.videojs(playerEl, { autoplay: false });
+      player = window.videojs(playerEl, {
+        autoplay: false,
+        playbackRates: [0.5, 0.75, 1, 1.1, 1.25, 1.5],
+        controlBar: {
+          children: [
+            'playToggle',
+            'currentTimeDisplay',
+            'progressControl',
+            'durationDisplay',
+            'volumePanel',
+            'playbackRateMenuButton',
+            'fullscreenToggle'
+          ]
+        }
+      });
       attachPlayerEvents();
     }
   }
