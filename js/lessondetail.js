@@ -104,14 +104,28 @@
     currentIndex = index;
     const clip = clipsSorted[index];
     const clipId = clip.clipId || (lesson.lessonId + '_' + (index+1));
+    const srcUrl = (clip.url||'').trim();
+    // Basic guard: ensure we have an mp4-looking URL
+    if(!srcUrl || !/\.mp4($|\?|#)/i.test(srcUrl)){
+      console.warn('Clip URL missing or not an mp4', clip);
+      alert('This clip has an invalid or missing MP4 URL.');
+      return;
+    }
     if(player){
-      player.pause();
-      player.src({ type:'video/mp4', src: clip.url });
-      player.ready(()=>{ player.play(); });
+      try {
+        player.pause();
+        player.src({ src: srcUrl, type: 'video/mp4' });
+        player.play(); // user initiated click so play should be allowed
+      } catch(e){
+        console.error('Video.js set src error', e);
+      }
     } else {
-      playerEl.querySelector('source').src = clip.url;
+      const sourceEl = playerEl.querySelector('source');
+      sourceEl.src = srcUrl;
       playerEl.load();
-      playerEl.play();
+      playerEl.play().catch(err=>{
+        console.error('Native video play failed', err);
+      });
     }
     ProgressTracker.markClipStarted(String(lesson.lessonId), clipId);
     // If this is the last clip and user started it, mark lesson complete per spec variant
@@ -135,8 +149,25 @@
 
   if(player){
     player.on('ended', handleEnded);
+    player.on('error', function(){
+      const err = player.error();
+      if(err){
+        console.error('Video.js error', err.code, err.message, err);
+        const msg = document.createElement('div');
+        msg.className = 'alert alert-danger mt-2';
+        msg.textContent = 'Video playback error (code '+err.code+'). Please check the clip URL or try again.';
+        if(!container.querySelector('.alert-danger')) container.appendChild(msg);
+      }
+    });
   } else {
     playerEl.addEventListener('ended', handleEnded);
+    playerEl.addEventListener('error', function(){
+      console.error('Native video error','code' in playerEl.error ? playerEl.error.code : playerEl.error);
+      const msg = document.createElement('div');
+      msg.className = 'alert alert-danger mt-2';
+      msg.textContent = 'Video playback error. Please check the clip URL or try again.';
+      if(!container.querySelector('.alert-danger')) container.appendChild(msg);
+    });
   }
 
   updateClipStatusUI();
