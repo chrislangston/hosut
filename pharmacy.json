@@ -1,0 +1,60 @@
+{
+  "courseName": "Pharmacy Spanish",
+  "courseId": 1,
+  "description": "Pharmacy Spanish",
+  "coursePreviewUrl": "https://s3.amazonaws.com/handsonspanish/assets/imgpharmacy/pharmacy-course.jpg",
+  "lessons": [
+    {
+      "lessonId": 1,
+      "lessonDescription": "Introduction",
+      "displayOrder": 1,
+      "lessonUrl": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/01-Pharmacy-Introduction-Cultural-Notes-720.mp4",
+      "durationInSeconds": 1145,
+      "durationToDisplay": "19 minutes 5 seconds",
+      "thumbnailImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_thumbnail.jpg",
+      "largeImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_400x267.jpg",
+      "hasQuizzes": false,
+      "numberOfQuizQuestions": 0,
+      "clips": [
+        {
+          "clipId": "1a",
+          "durationInSeconds": 703,
+            "durationDisplay": "11 minutes 43 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/intro/01-Pharmacy-Introduction-Overview-And-Objectives-720.mp4",
+          "displayOrder": 1,
+          "title": "Overview and Objectives"
+        },
+        {
+          "clipId": "1b",
+          "durationInSeconds": 442,
+          "durationDisplay": "7 minutes 32 seconds",
+          "url": "https://handsonspanish.s3.amazonaws.com/pharmacy/videos/intro/01-Pharmacy-Introduction-Cultural-Notes-720.mp4",
+          "displayOrder": 2,
+          "title": "Cultural Notes"
+        }
+      ]
+    },
+    {
+      "lessonId": 2,
+      "lessonDescription": "Pronunciation",
+      "displayOrder": 2,
+      "lessonUrl": "",
+      "durationInSeconds": 3328,
+      "durationToDisplay": "54 minutes 27 seconds",
+      "thumbnailImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/pronunciation_thumbnail.jpg",
+      "largeImageUrl": "https://s3.amazonaws.com/handsonspanish/assets/img/pharmacy/introduction_400x267.jpg",
+      "hasQuizzes": true,
+      "numberOfQuizQuestions": 13,
+      "clips": [
+        {"clipId":"2a","durationInSeconds":550,"durationDisplay":"9 minutes 10 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-a-Spanish-Alphabet-Dialectal-Differences-720.mp4","displayOrder":1,"title":"Spanish Alphabet & Dialectal Differences"},
+        {"clipId":"2b","durationInSeconds":542,"durationDisplay":"9 minutes 2 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-b-Vowels-720.mp4","displayOrder":2,"title":"Vowels"},
+        {"clipId":"2c","durationInSeconds":480,"durationDisplay":"8 minutes","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-c-Consonants-B-through-M-720.mp4","displayOrder":3,"title":"Consonants B through M"},
+        {"clipId":"2d","durationInSeconds":503,"durationDisplay":"8 minutes 23 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunciation-d-Consonants-n-through-r-720.mp4","displayOrder":4,"title":"Consonants N through R"},
+        {"clipId":"2e","durationInSeconds":215,"durationDisplay":"3 minutes 34 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunciation-e-Consonants-s-through-z-720.mp4","displayOrder":5,"title":"Consonants S through Z"},
+        {"clipId":"2f","durationInSeconds":655,"durationDisplay":"10 minutes 55 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Ponunciation-f-Stress-Rules-and-Punctuation-720.mp4","displayOrder":6,"title":"Stress Rules and Punctuation"},
+        {"clipId":"2g","durationInSeconds":383,"durationDisplay":"6 minutes 23 seconds","url":"https://handsonspanish.s3.amazonaws.com/pharmacy/videos/pronunciation/02-Pharmacy-Pronunication-g-Practice-720.mp4","displayOrder":7,"title":"Practice"}
+      ]
+    }
+  ],
+  "numberOfLessons": 2
+}
