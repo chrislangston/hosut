@@ -52,9 +52,9 @@
       <div class="col-12 col-lg-8 mb-3">
         <div class="position-relative">
           <video id="lesson-player" class="video-js vjs-fluid rounded border" controls preload="none" playsinline></video>
-          <div id="player-placeholder" class="position-absolute top-50 start-50 translate-middle text-center text-muted small">
-            <i class="bi bi-play-circle display-6 d-block mb-2"></i>
-            <span>Select a clip on the right to begin playback.</span>
+          <div id="player-placeholder" class="position-absolute top-50 start-50 translate-middle text-center small">
+            <i class="bi bi-play-circle display-6 d-block mb-2 text-white"></i>
+            <span style="color: white;">Select a clip from the Clips area to begin playback.</span>
           </div>
         </div>
       </div>
